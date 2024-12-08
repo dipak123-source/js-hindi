@@ -11,4 +11,18 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id===anotherId)
+// console.log(id===anotherId)
+let myName = "suraj paswan"
+let myAnotherName = myName
+myAnotherName = "dipak paswan"
+//console.log(myAnotherName)
+//stack (primitive) or Heap (Non primitive)
+let userOne = {
+    email:"dipakpaswan9635@gmail.com",
+    upi:"user@ybl"
+}
+console.log(userOne.email);
+let userTwo = userOne;
+userTwo.email = "surajk01712@gmail.com";//both userOne and userTwo are having the same email id because here change by reference operation are happening
+console.log(userOne.email);
+console.log(userTwo.email);
